@@ -1,0 +1,428 @@
+:root{
+    --headerclr:#030303;
+    --mainclr:#ffcb0f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    /* transition: .2s; */
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 40.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.header{
+    padding: 2rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:black;
+    z-index: 1000;
+}
+
+.header img{
+    flex-basis:15%;
+
+    width: 10%;
+    cursor: pointer;
+
+}
+#logo{
+    color: var(--mainclr);
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-right: 100px;
+}
+.nav a{
+    color: #fff;
+    font-size: 1.9rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 1rem;
+    padding: 10px;
+}
+.nav a:hover{
+    color: var(--mainclr);
+}
+.icon-header div{
+    color: white;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.icon-header div:hover{
+    color: var(--mainclr);
+}
+#menu-bar{
+    display: none;
+}
+.nav.active{
+    top: 100%;
+}
+   /* ------------background image start ------------------------- */
+
+
+   .background-image{
+    background-image:
+    linear-gradient( rgba(64, 64, 69, 0.52), rgba(53, 39, 49, 0.73)),
+    url('bg.jpg');
+  
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.inner-back-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.inner-back-text h1{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+.inner-back-text h1 span{
+    font-size: 30px;
+    color: rgb(246, 193, 0);
+    text-transform: uppercase;
+}
+.inner-back-text p{
+    color: white;
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+    padding: 1rem;
+}
+.inner-back-btn{
+    display: flex;
+    justify-content: center;
+}
+.inner-back-btn a{
+    margin-right: 1rem;
+}
+.sec-btn{
+    padding: 1.5rem 4rem;
+    background: var(--mainclr);
+    border-radius: 15px;
+    color: var(--headerclr);
+    font-size: 2rem;
+}
+.sec-btn:hover{
+    background: var(--headerclr);
+    color: white;
+    /* letter-spacing: 2px; */
+}
+ 
+
+/* welcome message from the company=----------------------- */
+
+
+.welcome{
+    padding: 3rem 7%;
+}
+.main-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.inner-welcome{
+    flex: 1 1 45rem;
+}
+.welcome-text h1{
+    color: var(--headerclr);
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+.welcome-text h1 span{
+
+    color: var(--mainclr);
+}
+
+.welcome-text p{
+    font-size: 1.9rem;
+    padding: 1rem 0;
+    margin-bottom: 25px;
+}
+.welcome-text a{
+    padding: 1.6rem 5rem;
+    background: var(--mainclr);
+ 
+    color: var(--headerclr);
+    font-size: 15px;
+    border-radius: 15px;
+}
+.welcome-text a:hover{
+    background: var(--headerclr);
+    color: white;
+}
+.inner-welcome img{
+width: 80%;
+border-radius: 15px;
+
+}
+/* -----------------------------our services =------------------------------------------ */
+
+.our-services{
+    padding: 5rem 7%;
+}
+.img1
+{
+    display: flex;
+    width: 40%;
+}
+.our-services h1{
+    color: var(--headerclr);
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem 0;
+}
+.our-services h1 span{
+    color: var(--mainclr);
+}
+
+.facilities-col a{
+    padding: 2rem 5rem;
+    background: var(--mainclr);
+ 
+    color: var(--headerclr);
+    font-size: 15px;
+    border-radius: 15px;
+
+}
+.facilities-col a:hover{
+    background: var(--headerclr);
+    color: white;
+}
+
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.facilities-col  p{
+    padding: 0;
+    font-size: 12px;
+
+}
+.facilities-col h2{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 25px;
+     
+}
+
+/* our severces are over ---------------------------- */
+
+
+/* our gallery------------------ */
+
+
+.our-gallery h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+.our-gallery h1 span{
+    color: var(--mainclr);
+    font-size: 30px;
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-gallery{
+    flex: 1 1 300px;
+}
+.inner-gallery img{
+    width: 100%;
+    height: 300px;
+    transition: .5s;
+    border-radius: 10px;
+}
+.inner-gallery img:hover{
+    transform: translateY(-25px);
+}
+/* our gallery is over --------------------------- */
+
+
+
+/*----------------------------- customer review ----------------------------------------- */
+  
+
+.customer-review{
+    padding: 4rem 7%;
+}
+.customer-review h1{
+    color: var(--headerclr);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.customer-review h1 span{
+    color: var(--mainclr);
+}
+.main-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.inner-review{
+    flex: 1 1 300px;
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.inner-review:hover{
+    background: var(--mainclr);
+}
+.inner-review:hover i{
+    color: white;
+}
+.inner-review p{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+.inner-review img{
+    width: 50px;
+    border-radius: 4em;
+}
+
+
+/*----------------------------- customer review ----------------------------------------- */
+
+
+
+/* --------------------------any quries page ---------------------------------- */
+
+.cta
+{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('cta.jpg');
+
+    background-position:center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color:#fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 30px;
+}
+
+.cta-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3em;
+}
+.cta-btn:hover{
+    border: 1px solid #e0b90b;
+    background: #f3bd0c;
+    transition: 1s;
+
+} 
+
+
+/* --------------------------any quries page ---------------------------------- */
+
+
+/*---------------------------- footer ------------------- */
+
+
+.footer{
+    padding: 4rem 7%;
+    width: 100%;
+    background-color: black;
+}
+.main-footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer-inner-content{
+    flex: 1 1 280px;
+    padding: 1rem;
+}
+.footer-inner-content h2{
+    color: white;
+    font-size: 20px;  
+    padding: 2rem 0;
+}
+.footer-inner-content h4{
+    color: white;
+    font-size: 15px;  
+    padding: 2rem 0;
+}
+.footer-inner-content p{
+    color: white;
+    font-size: 1.9rem;
+    margin: 1rem 0;
+}
+
+.footer-inner-content li{
+    color: white;
+    font-size: 1.9rem;
+    margin: 1rem 0;
+}
+.footer-inner-content a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+.hu
+{
+    display: flex;
+}
+/*---------------------------- footer ------------------- */
